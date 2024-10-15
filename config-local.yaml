@@ -1,0 +1,17 @@
+listen_port: 8080
+web_port: 8081
+
+client_certs: ./client-certificates/WiiU-common.pem
+confdir: ./.mitmproxy
+
+scripts: ["../retendo_addon.py"]
+retendo_redirect: true
+
+pretendo_host: nginx
+pretendo_host_port: 80
+pretendo_http: true
+
+ssl_insecure: true
+
+tls_version_client_min: UNBOUNDED
+tls_version_server_min: UNBOUNDED
